@@ -5,10 +5,11 @@
 class MainScene : public Scene
 {
 public:
+	MainScene();
 	void update() override;
 	void draw() override;
 
 private:
 	sf::RectangleShape m_shape{};
-
+	sf::Text m_text{};
 };

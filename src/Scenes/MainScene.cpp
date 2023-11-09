@@ -1,7 +1,15 @@
 #include "MainScene.h"
 #include "Game.h"
 
+#include "Resources.h"
+
 #include "TestScene.h"
+
+MainScene::MainScene()
+{
+	m_text = createText();
+	m_text.setString("MainScene");
+}
 
 void MainScene::update()
 {
@@ -22,4 +30,5 @@ void MainScene::update()
 void MainScene::draw()
 {
 	Game::getInstance().getWindow().draw(m_shape);
+	Game::getInstance().getWindow().draw(m_text);
 }
