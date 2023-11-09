@@ -2,7 +2,7 @@
 
 #include <memory.h>
 
-#include "Scenes/MainScene.h"
+#include "Scenes/GameStartScene.h"
 
 
 
@@ -14,6 +14,8 @@ Game& Game::getInstance()
 
 void Game::run()
 {
+    load();
+
     sf::Clock clock{};
     while (m_window.isOpen())
     {
@@ -48,10 +50,10 @@ SceneManager& Game::getSceneManager()
     return m_scene_manager;
 }
 
-Game::Game()
+void Game::load()
 {
-	createWindow();
-    m_scene_manager.changeScene(std::make_unique<MainScene>());
+    createWindow();
+    m_scene_manager.changeScene(std::make_unique<GameStartScene>());
 }
 
 void Game::update()

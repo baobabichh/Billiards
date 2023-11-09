@@ -14,12 +14,14 @@ public:
 	SceneManager& getSceneManager();
 
 private:
-	Game();
+	Game() = default;
 
 	void update();
 	void draw();
 
+	void load();
 	void createWindow();
+
 
 private:
 	sf::RenderWindow m_window{};
