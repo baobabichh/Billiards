@@ -24,6 +24,7 @@
     <ProjectGuid>{81cb9b9d-d360-4a70-8a2b-a700984ca6b5}</ProjectGuid>
     <RootNamespace>SFMLConnected</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Billiard</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
