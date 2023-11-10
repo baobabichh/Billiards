@@ -9,6 +9,7 @@ public:
 	static Resources& getInstance();
 
 	void load();
+	void minLoad();
 
 	void loadFont(const std::string& fname, const std::string& name);
 	void loadTexture(const std::string& fname, const std::string& name);

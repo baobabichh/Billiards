@@ -11,8 +11,13 @@ Resources& Resources::getInstance()
 
 void Resources::load()
 {
-	loadFont("resources/From Cartoon Blocks.ttf", "default_font");
 	loadFont("resources/Montserrat-Regular.ttf", "montserrat");
+}
+
+void Resources::minLoad()
+{
+	loadFont("resources/From Cartoon Blocks.ttf", "default_font");
+	loadTexture("resources/billiard_start.jpg", "billiard_start");
 }
 
 void Resources::loadFont(const std::string& fname, const std::string& name)
@@ -102,6 +107,9 @@ sf::Text createText()
 
 	// set the color
 	text.setFillColor(sf::Color::White);
+
+	text.setOutlineColor(sf::Color::Black);
+	text.setOutlineThickness(2);
 
 	return text;
 }

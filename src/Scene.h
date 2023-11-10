@@ -1,6 +1,7 @@
 #pragma once
 #include "Events.h"
 #include "Resources.h"
+#include "Functions.h"
 
 class Scene
 {
