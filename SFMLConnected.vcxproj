@@ -161,6 +161,7 @@
     <ClCompile Include="src\Functions.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Phisics\RigidBodyRect.cpp" />
     <ClCompile Include="src\Resources.cpp" />
     <ClCompile Include="src\SceneManager.cpp" />
     <ClCompile Include="src\Scenes\GameStartScene.cpp" />
@@ -284,6 +285,7 @@
     <ClInclude Include="src\Events.h" />
     <ClInclude Include="src\Functions.h" />
     <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\Phisics\RigidBodyRect.h" />
     <ClInclude Include="src\Resources.h" />
     <ClInclude Include="src\Scene.h" />
     <ClInclude Include="src\SceneManager.h" />
