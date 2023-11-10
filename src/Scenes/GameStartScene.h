@@ -9,7 +9,7 @@ class GameStartScene : public Scene
 public:
 	GameStartScene();
 	void update() override;
-	void draw() override;
+	void draw()const override;
 
 private:
 	sf::Text m_text{};

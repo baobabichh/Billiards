@@ -156,6 +156,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Debug.cpp" />
     <ClCompile Include="src\Events.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\main.cpp" />
@@ -278,6 +279,7 @@
     <ClInclude Include="libs\SFML-2.6.1\include\SFML\Window\WindowBase.hpp" />
     <ClInclude Include="libs\SFML-2.6.1\include\SFML\Window\WindowHandle.hpp" />
     <ClInclude Include="libs\SFML-2.6.1\include\SFML\Window\WindowStyle.hpp" />
+    <ClInclude Include="src\Debug.h" />
     <ClInclude Include="src\Events.h" />
     <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\Resources.h" />

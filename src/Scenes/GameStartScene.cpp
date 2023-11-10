@@ -32,7 +32,7 @@ void GameStartScene::update()
 	}
 }
 
-void GameStartScene::draw()
+void GameStartScene::draw() const
 {
 	Game::getInstance().getWindow().draw(m_text);
 }

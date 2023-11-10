@@ -13,15 +13,14 @@ void Events::clear()
 {
 	m_events.clear();
 }
-
-std::vector<sf::Event>::const_iterator Events::cbegin() const
+std::vector<sf::Event>::const_iterator Events::begin() const
 {
-	return m_events.cbegin();
+	return m_events.begin();
 }
 
-std::vector<sf::Event>::const_iterator Events::cend() const
+std::vector<sf::Event>::const_iterator Events::end() const
 {
-	return m_events.cend();
+	return m_events.end();
 }
 
 std::vector<sf::Event>::iterator Events::begin()

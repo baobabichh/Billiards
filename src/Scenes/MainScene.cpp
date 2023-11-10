@@ -17,8 +17,7 @@ void MainScene::update()
 	m_shape.setSize({ 200, 200 });
 	m_shape.setPosition({ 100,100 });
 
-	auto events = Game::getInstance().getEvents();
-	for (const auto e : events)
+	for (const auto& e : Game::getInstance().getEvents())
 	{
 		if (e.type == sf::Event::KeyReleased && e.key.code == sf::Keyboard::Key::Num1)
 		{
@@ -27,7 +26,7 @@ void MainScene::update()
 	}
 }
 
-void MainScene::draw()
+void MainScene::draw() const
 {
 	Game::getInstance().getWindow().draw(m_shape);
 	Game::getInstance().getWindow().draw(m_text);
