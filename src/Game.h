@@ -1,6 +1,7 @@
 #pragma once
 #include "Events.h"
 #include "SceneManager.h"
+#include "Debug.h"
 
 class Game
 {
@@ -27,6 +28,7 @@ private:
 	sf::RenderWindow m_window{};
 	Events m_events{};
 	SceneManager m_scene_manager{};
+	DebugLayer m_debug_layer{};
 	float m_time_step{};
 };
 

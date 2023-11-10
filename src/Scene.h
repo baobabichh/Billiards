@@ -6,7 +6,7 @@ class Scene
 {
 public:
 	virtual void update() {};
-	virtual void draw() {};
+	virtual void draw()const {};
 	virtual ~Scene() = default;
 };
 

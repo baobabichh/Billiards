@@ -67,11 +67,15 @@ void Game::update()
     }
 
     m_scene_manager.update();
+
+    m_debug_layer.update();
 }
 
 void Game::draw()
 {
     m_scene_manager.draw();
+
+    m_debug_layer.draw();
 }
 
 void Game::createWindow()
